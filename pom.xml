@@ -6,12 +6,15 @@
 
     <artifactId>justj-base</artifactId>
     <version>0.1-SNAPSHOT</version>
+    <name>Just(J)ava Base POM</name>
+    <packaging>pom</packaging>
+
+
     <properties>
         <annotations.version>15.0</annotations.version>
         <spock-reports.version>1.2.9</spock-reports.version>
         <maven-javadoc-plugin.version>1.2.1</maven-javadoc-plugin.version>
     </properties>
-    <name>Just(J)ava Base POM</name>
 
     <parent>
         <groupId>org.maxur</groupId>
