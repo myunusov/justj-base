@@ -13,6 +13,7 @@
     <properties>
         <annotations.version>15.0</annotations.version>
         <spock-reports.version>1.2.9</spock-reports.version>
+        <pegdown-doclet.version>1.2.1</pegdown-doclet.version>
     </properties>
 
     <parent>
@@ -67,7 +68,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <configuration>
-                    <outputDirectory>lib</outputDirectory>
                     <overWriteReleases>false</overWriteReleases>
                     <overWriteSnapshots>false</overWriteSnapshots>
                     <overWriteIfNewer>true</overWriteIfNewer>
@@ -114,12 +114,12 @@
                     <docletArtifact>
                         <groupId>ch.raffael.pegdown-doclet</groupId>
                         <artifactId>pegdown-doclet</artifactId>
-                        <version>${maven-javadoc-plugin.version}</version>
+                        <version>${pegdown-doclet.version}</version>
                     </docletArtifact>
                     <useStandardDocletOptions>true</useStandardDocletOptions>
 
                     <failOnError>true</failOnError>
-                    <detectLinks>true</detectLinks>
+                    <detectLinks>false</detectLinks>
                     <tags>
                         <tag>
                             <name>todo</name>
@@ -147,18 +147,8 @@
                     <aggregate>true</aggregate>
 
                     <additionalparam>
-                        -inferrel -inferdep -quiet -hide java.*
-                        -collpackages java.util.* -qualify
-                        -postfixpackage -nodefontsize 9
-                        -nodefontpackagesize 7
-                        -edgefontname "Trebuchet MS"
-                        -nodefontabstractname "Trebuchet MS"
-                        -nodefontclassabstractname "Trebuchet MS"
-                        -nodefontclassname "Trebuchet MS"
-                        -nodefontname "Trebuchet MS"
-                        -nodefontpackagename "Trebuchet MS"
-                        -nodefonttagname "Trebuchet MS"
-                        -view
+                        -version
+                        -author
                     </additionalparam>
 
                 </configuration>
