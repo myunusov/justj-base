@@ -13,13 +13,12 @@
     <properties>
         <annotations.version>15.0</annotations.version>
         <spock-reports.version>1.2.9</spock-reports.version>
-        <maven-javadoc-plugin.version>1.2.1</maven-javadoc-plugin.version>
     </properties>
 
     <parent>
         <groupId>org.maxur</groupId>
         <artifactId>maxur-base</artifactId>
-        <version>0.16-SNAPSHOT</version>
+        <version>0.18</version>
     </parent>
 
     <dependencies>
