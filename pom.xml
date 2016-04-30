@@ -12,7 +12,7 @@
 
     <properties>
         <annotations.version>15.0</annotations.version>
-        <spock-reports.version>1.2.9</spock-reports.version>
+        <spock-reports.version>1.2.10</spock-reports.version>
         <pegdown-doclet.version>1.2.1</pegdown-doclet.version>
     </properties>
 
